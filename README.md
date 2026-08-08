@@ -1,5 +1,7 @@
 # OrigamiCP
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21848888.svg)](https://doi.org/10.5281/zenodo.21848888)
+
 Recovering an origami crease pattern from an image of the unfolded sheet: where
 every fold line is, and which way each one folds.
 
@@ -48,6 +50,13 @@ All results are synthetic. The capture tooling for a real dataset is
 implemented and tested end to end on synthetic scans, but no physical sheets
 have been collected; that is the largest open gap and it is discussed in the
 write-up's limitations.
+
+## Citing
+
+Archived on Zenodo; the badge above resolves to the latest version. To cite the
+exact revision behind the reported numbers, use the version DOI
+[10.5281/zenodo.21848889](https://doi.org/10.5281/zenodo.21848889).
+Machine-readable metadata is in [CITATION.cff](CITATION.cff).
 
 ## Licence
 
