@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or the benchmark, please cite it as below."
+title: "OrigamiCP: crease-pattern recovery from images of unfolded sheets"
+abstract: >-
+  Code, synthetic benchmark generator and capture tooling for recovering an
+  origami crease pattern from a single image of the unfolded sheet. Includes the
+  fold-condition checks, the physically-based scan renderer, the mask-to-graph
+  extractor, and the flip-invariant mountain/valley objective.
+type: software
+authors:
+  - family-names: Garibli
+    given-names: Nihat
+    orcid: "https://orcid.org/0009-0003-4755-6356"
+    affiliation: "Baku State University"
+    email: qaribli.nihat.nemat@bsu.edu.az
+repository-code: "https://github.com/nihatgaribli/origamicp"
+license: MIT
+keywords:
+  - origami
+  - crease pattern
+  - identifiability
+  - shape from shading
+  - structured prediction
+  - computer vision

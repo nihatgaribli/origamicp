@@ -1,0 +1,22 @@
+{
+  "title": "OrigamiCP: crease-pattern recovery from images of unfolded sheets",
+  "description": "Code, synthetic benchmark generator and capture tooling for recovering an origami crease pattern from a single image of the unfolded sheet: the fold-condition checks, the physically-based scan renderer, the mask-to-graph extractor, the graph-level evaluation, and the flip-invariant mountain/valley objective. Every number and figure in the accompanying write-up is produced by a single script over a released checkpoint.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Garibli, Nihat",
+      "affiliation": "Baku State University",
+      "orcid": "0009-0003-4755-6356"
+    }
+  ],
+  "keywords": [
+    "origami",
+    "crease pattern",
+    "identifiability",
+    "mountain/valley assignment",
+    "shape from shading",
+    "structured prediction",
+    "computer vision"
+  ]
+}
