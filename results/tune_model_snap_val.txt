@@ -1,0 +1,14 @@
+
+sweep on model best.pt, val split: 200 sheets
+
+ threshold   snap  density  crease F1  validity  vertices  vs truth
+      0.92     35      3.5      0.746     0.301      1035     1.12x
+      0.92     40      3.5      0.724     0.281       971     1.05x
+      0.92     30      3.5      0.762     0.274      1110     1.20x
+      0.92     50      3.5      0.685     0.267       855     0.92x
+      0.92     45      3.5      0.706     0.267       899     0.97x
+      0.92     25      3.5      0.774     0.259      1237     1.33x
+      0.92     20      3.5      0.759     0.226      1361     1.47x
+
+  best validity  threshold=0.92 snap=35 density=3.5  -> validity 0.301, F1 0.746
+  best crease F1 threshold=0.92 snap=25 density=3.5  -> validity 0.259, F1 0.774

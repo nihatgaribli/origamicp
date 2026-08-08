@@ -1,0 +1,5 @@
+sheet_id,design_id,image_path,modality,face,rotation_deg,dpi,paper_type,gsm,color,light_azimuth_deg,folder_name,fold_date,split,notes
+s001,d02_vertex4,s001_front_0.png,scanner,front,0,600,kami,60,white,-1.0,nihat,2026-07-26,train,pilot
+s001,d02_vertex4,s001_front_90.png,scanner,front,90,600,kami,60,white,-1.0,nihat,2026-07-26,train,
+s001,d02_vertex4,s001_back_0.png,scanner,back,0,600,kami,60,white,-1.0,nihat,2026-07-26,train,
+s001,d02_vertex4,s001_back_90.png,scanner,back,90,600,kami,60,white,-1.0,nihat,2026-07-26,train,

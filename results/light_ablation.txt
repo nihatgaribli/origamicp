@@ -1,0 +1,17 @@
+
+with light direction  (216 sheets)
+  MV accuracy               0.989 +- 0.017
+  MV accuracy up to a flip  0.989 +- 0.017
+  sheets that are all-right or all-wrong  99.5%
+
+without light direction  (214 sheets)
+  MV accuracy               0.536 +- 0.275
+  MV accuracy up to a flip  0.738 +- 0.141
+  sheets that are all-right or all-wrong  16.4%
+
+up-to-flip accuracy, three reference points
+  creases flipped independently  0.623
+  ablated model                  0.738
+  one bit resolved coherently    1.000
+
+figure -> ..\results\light_ablation.png

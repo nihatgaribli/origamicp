@@ -1,0 +1,9 @@
+
+216 sheets | 960 creases relabelled | 0 unsatisfiable vertices | 34 conflicts
+
+                             MV accuracy   median angle err   mean |angle err|
+raw extraction                    0.9700            0.088 deg            0.627 deg
+constrained decoding              0.8210            0.094 deg            0.671 deg
+
+(geometric validity 0.314 -> 0.458, reported only as a check that the constraints were applied -- it is not
+ evidence of improvement, since the decoder enforces exactly what it measures)

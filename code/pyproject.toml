@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "origamicp"
+version = "0.1.0"
+description = "Crease-pattern extraction from photographs of physically folded paper"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "opencv-python-headless>=4.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["origamicp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+
+mountain/valley without the light direction, test split
+
+  model                 plain  up to flip  one crease  coherent
+  creases flipped independently    0.500       0.623     --      --
+  nolight768            0.536       0.738       0.678    16.4%
+  nl_full               0.511       0.647       0.582     1.9%
+  nl_deep               0.523       0.698       0.643     7.9%
+  nl_flipinv            0.538       0.972       0.959    92.6%
+
+  one bit resolved coherently would be 1.000 in every column but the first

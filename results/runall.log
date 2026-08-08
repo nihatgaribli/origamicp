@@ -1,0 +1,111 @@
+
+========================================================================
+resolution
+========================================================================
+ render px   px/mm    dpi   recall  precision      F1   snap  density  F1 default
+       256     1.5     37    0.458      0.595   0.517     15      2.5       0.049
+       384     2.2     56    0.611      0.719   0.660     15      3.0       0.485
+       512     2.9     75    0.655      0.813   0.726     15      3.5       0.653
+       768     4.4    112    0.783      0.760   0.771     25      3.5       0.759
+      1024     5.9    149    0.848      0.772   0.808     30      3.5       0.808
+
+figure -> ..\results\resolution.png
+
+========================================================================
+oracle_ceiling
+========================================================================
+
+oracle (ground-truth masks) on test: 216 sheets
+
+  crease    creases P=0.703 R=0.713 F1=0.708 (3882/5444 found, 5519 predicted) | MV acc=0.978
+  geometry  valid vertices 0.518 | kawasaki 0.557 | maekawa 0.730 | big-little-big 0.794
+  vertices  1806 interior recovered vs 1920 in truth
+
+========================================================================
+classical_baseline
+========================================================================
+
+classical directional-step baseline on test: 216 sheets
+
+  crease    creases P=0.449 R=0.183 F1=0.260 (996/5444 found, 2220 predicted) | MV acc=0.907
+  geometry  valid vertices 0.149 | kawasaki 0.176 | maekawa 0.259 | big-little-big 0.874
+  vertices  1565 interior recovered vs 1920 in truth
+
+========================================================================
+model_pipeline
+========================================================================
+
+model best.pt on test: 216 sheets
+
+  pixel     crease P=0.889 R=0.816 F1=0.851 | MV acc=0.991 over 3,138,413 px | 216 images
+  crease    creases P=0.692 R=0.619 F1=0.653 (3368/5444 found, 4870 predicted) | MV acc=0.970
+  geometry  valid vertices 0.314 | kawasaki 0.359 | maekawa 0.513 | big-little-big 0.788
+  vertices  1719 interior recovered vs 1920 in truth
+
+========================================================================
+difficulty
+========================================================================
+
+216 sheets, crease signal-to-texture 0.46 to 7.42
+
+       SNR range     n   crease F1   MV accuracy
+   0.46 - 1.67      36       0.707         0.975
+   1.67 - 2.18      36       0.820         0.984
+   2.18 - 2.68      36       0.829         0.977
+   2.68 - 3.25      36       0.864         0.987
+   3.25 - 3.98      36       0.885         0.990
+   3.98 - 7.42      36       0.883         0.990
+
+figure -> ..\results\difficulty.png
+
+========================================================================
+constrained_decoding
+========================================================================
+
+216 sheets | 960 creases relabelled | 0 unsatisfiable vertices | 34 conflicts
+
+                             MV accuracy   median angle err   mean |angle err|
+raw extraction                    0.9700            0.088 deg            0.627 deg
+constrained decoding              0.8210            0.094 deg            0.671 deg
+
+(geometric validity 0.314 -> 0.458, reported only as a check that the constraints were applied -- it is not
+ evidence of improvement, since the decoder enforces exactly what it measures)
+
+========================================================================
+light_ablation
+========================================================================
+
+with light direction  (216 sheets)
+  MV accuracy               0.989 +- 0.017
+  MV accuracy up to a flip  0.989 +- 0.017
+  sheets that are all-right or all-wrong  99.5%
+
+without light direction  (214 sheets)
+  MV accuracy               0.536 +- 0.275
+  MV accuracy up to a flip  0.738 +- 0.141
+  sheets that are all-right or all-wrong  16.4%
+
+up-to-flip accuracy, three reference points
+  creases flipped independently  0.623
+  ablated model                  0.738
+  one bit resolved coherently    1.000
+
+figure -> ..\results\light_ablation.png
+
+========================================================================
+coherence
+========================================================================
+
+mountain/valley without the light direction, test split
+
+  model                 plain  up to flip  one crease  coherent
+  creases flipped independently    0.500       0.623     --      --
+  nolight768            0.536       0.738       0.678    16.4%
+  nl_full               0.511       0.647       0.582     1.9%
+  nl_deep               0.523       0.698       0.643     7.9%
+  nl_flipinv            0.538       0.972       0.959    92.6%
+
+  one bit resolved coherently would be 1.000 in every column but the first
+
+========================================================================
+8/8 stages completed -> ..\results

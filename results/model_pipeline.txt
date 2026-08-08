@@ -1,0 +1,7 @@
+
+model best.pt on test: 216 sheets
+
+  pixel     crease P=0.889 R=0.816 F1=0.851 | MV acc=0.991 over 3,138,413 px | 216 images
+  crease    creases P=0.692 R=0.619 F1=0.653 (3368/5444 found, 4870 predicted) | MV acc=0.970
+  geometry  valid vertices 0.314 | kawasaki 0.359 | maekawa 0.513 | big-little-big 0.788
+  vertices  1719 interior recovered vs 1920 in truth

@@ -1,0 +1,12 @@
+
+216 sheets, crease signal-to-texture 0.46 to 7.42
+
+       SNR range     n   crease F1   MV accuracy
+   0.46 - 1.67      36       0.707         0.975
+   1.67 - 2.18      36       0.820         0.984
+   2.18 - 2.68      36       0.829         0.977
+   2.68 - 3.25      36       0.864         0.987
+   3.25 - 3.98      36       0.885         0.990
+   3.98 - 7.42      36       0.883         0.990
+
+figure -> ..\results\difficulty.png

@@ -1,0 +1,12 @@
+
+sweep on ground-truth masks, val split: 200 sheets
+
+ threshold   snap  density  crease F1  validity  vertices  vs truth
+      0.50     35      3.5      0.782     0.489       977     1.05x
+      0.50     40      3.5      0.747     0.463       904     0.97x
+      0.50     30      3.5      0.789     0.432      1074     1.16x
+      0.50     25      3.5      0.803     0.409      1164     1.25x
+      0.50     20      3.5      0.793     0.356      1255     1.35x
+
+  best validity  threshold=0.50 snap=35 density=3.5  -> validity 0.489, F1 0.782
+  best crease F1 threshold=0.50 snap=25 density=3.5  -> validity 0.409, F1 0.803

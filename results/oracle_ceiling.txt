@@ -1,0 +1,6 @@
+
+oracle (ground-truth masks) on test: 216 sheets
+
+  crease    creases P=0.703 R=0.713 F1=0.708 (3882/5444 found, 5519 predicted) | MV acc=0.978
+  geometry  valid vertices 0.518 | kawasaki 0.557 | maekawa 0.730 | big-little-big 0.794
+  vertices  1806 interior recovered vs 1920 in truth

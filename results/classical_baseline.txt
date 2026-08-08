@@ -1,0 +1,6 @@
+
+classical directional-step baseline on test: 216 sheets
+
+  crease    creases P=0.449 R=0.183 F1=0.260 (996/5444 found, 2220 predicted) | MV acc=0.907
+  geometry  valid vertices 0.149 | kawasaki 0.176 | maekawa 0.259 | big-little-big 0.874
+  vertices  1565 interior recovered vs 1920 in truth

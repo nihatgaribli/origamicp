@@ -1,0 +1,45 @@
+# Personal, not for the public repository
+paper/gonderis-plani.md
+
+# LaTeX build artefacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/build*.log
+
+# Python
+__pycache__/
+*.pyc
+code/*.egg-info/
+code/.pytest_cache/
+
+# Generated datasets: reproduced by scripts/make_synthetic.py, far too large to
+# track. The index and the FOLD files are regenerated with the images.
+data/synth/
+data/synth768/
+data/real/
+
+# Training checkpoints: ~31 MB each, and the paper's numbers are reproduced from
+# them rather than from the weights being version-controlled.
+runs/
+
+# Superseded results, kept locally while the rewrite settles
+results_v1/
+
+# Figures and console output in results/ ARE tracked: the write-up cites them
+# and they are small.
+
+# The manuscript is deliberately not published here. Putting it in a public
+# repository amounts to posting a preprint, which is a separate decision from
+# releasing the code, and the paper's data-availability statement promises only
+# the code, the benchmark generator and the capture tooling.
+paper/
+
+# Figures from an earlier 512-pixel run, superseded by results/ and referenced
+# from nowhere. Publishing them would put two contradictory versions of the same
+# plot in one repository.
+docs/
