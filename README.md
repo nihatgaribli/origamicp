@@ -58,6 +58,14 @@ exact revision behind the reported numbers, use the version DOI
 [10.5281/zenodo.21848889](https://doi.org/10.5281/zenodo.21848889).
 Machine-readable metadata is in [CITATION.cff](CITATION.cff).
 
+## Related work
+
+[origami-recognition-system](https://github.com/nihatgaribli/origami-recognition-system)
+is a separate project of mine on the other side of the problem: it collects and
+labels photographs of *folded* models, toward recognising which model a photo
+shows. This repository goes the other way, from an image of an *unfolded* sheet
+back to its crease pattern. The two share a domain, not a dataset.
+
 ## Licence
 
 MIT, see [LICENSE](LICENSE).
